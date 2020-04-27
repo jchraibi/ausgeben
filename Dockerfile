@@ -8,5 +8,5 @@ RUN chown -R 1001:0 /opt/app-root/
 RUN pip install -r /opt/app-root/requirements.txt
 USER 1001
 WORKDIR /opt/app-root
-CMD ["gunicorn", "--access-logfile", "-", "-b", "0.0.0.0:8000", "app:app"]
+CMD ["gunicorn", "--access-logfile", "-", "-b", "0.0.0.0:8080", "app:app"]
 EXPOSE 8000
