@@ -9,4 +9,4 @@ RUN pip install -r /opt/app-root/requirements.txt
 USER 1001
 WORKDIR /opt/app-root
 CMD ["gunicorn", "--access-logfile", "-", "-b", "0.0.0.0:8080", "app:app"]
-EXPOSE 8000
+EXPOSE 8080
