@@ -1,7 +1,7 @@
 FROM python:3.7-stretch
 
 # Copying in source code
-COPY app.py /opt/app-root/
+COPY wsgi.py /opt/app-root/
 COPY requirements.txt /opt/app-root/
 COPY templates /opt/app-root/templates/
 RUN chown -R 1001:0 /opt/app-root/
